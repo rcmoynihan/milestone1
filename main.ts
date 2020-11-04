@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 function create_encoded_url (num: number) {
-    url = "https://" + steps
+    url = "https://12" + steps
     return url
 }
 input.onButtonPressed(Button.AB, function () {
