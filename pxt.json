@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "bluetooth": "*",
-        "microbit-pxt-timeanddate": "github:bsiever/microbit-pxt-timeanddate#v2.0.10"
+        "microbit-pxt-timeanddate": "github:bsiever/microbit-pxt-timeanddate#v2.0.10",
+        "microphone": "*"
     },
     "files": [
         "main.blocks",
