@@ -6,7 +6,7 @@ input.on_button_pressed(Button.A, on_button_pressed_a)
 
 def create_encoded_url(num: number):
     global url
-    url = "https://" + timeanddate.date_time()
+    url = "https://13" + ("" + str(steps))
     return url
 
 def on_button_pressed_ab():
@@ -32,3 +32,10 @@ input.on_gesture(Gesture.SHAKE, on_gesture_shake)
 url = ""
 steps = 0
 steps = 0
+
+def on_in_background():
+    global steps
+    while True:
+        steps = 0
+        basic.pause(86400000)
+control.in_background(on_in_background)

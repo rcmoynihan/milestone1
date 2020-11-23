@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 function create_encoded_url (num: number) {
-    url = "https://12" + steps
+    url = "https://13" + ("" + steps)
     return url
 }
 input.onButtonPressed(Button.AB, function () {
@@ -29,3 +29,9 @@ input.onGesture(Gesture.Shake, function () {
 let url = ""
 let steps = 0
 steps = 0
+control.inBackground(function () {
+    while (true) {
+        steps = 0
+        basic.pause(86400000)
+    }
+})
