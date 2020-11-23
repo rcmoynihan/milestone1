@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 function create_encoded_url (num: number) {
-    url = "https://13" + steps
+    url = "https://12" + steps
     return url
 }
 input.onButtonPressed(Button.AB, function () {
@@ -17,7 +17,7 @@ input.onButtonPressed(Button.B, function () {
     7,
     false
     )
-    basic.pause(100)
+    basic.pause(2000)
     bluetooth.stopAdvertising()
 })
 input.onGesture(Gesture.Shake, function () {
@@ -28,10 +28,4 @@ input.onGesture(Gesture.Shake, function () {
 })
 let url = ""
 let steps = 0
-timeanddate.setTime(12, 0, 0, timeanddate.MornNight.AM)
 steps = 0
-while (true) {
-    if (timeanddate.time(timeanddate.TimeFormat.HHMM24hr) == "00:00") {
-        steps = 0
-    }
-}

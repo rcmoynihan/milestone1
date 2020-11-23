@@ -6,7 +6,7 @@ input.on_button_pressed(Button.A, on_button_pressed_a)
 
 def create_encoded_url(num: number):
     global url
-    url = "https://13" + str(steps)
+    url = "https://" + timeanddate.date_time()
     return url
 
 def on_button_pressed_ab():
